@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Pangolin&display=swap');
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #f5f5f5;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#container {
+    width: inherit;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header > p[aria-label='title'] {
+    font-size: 6rem;
+    opacity: .5;
+    font-family: 'Pangolin';
+    margin-bottom: 0;
+    color: #f52727;
+}
+
+.selected {
+    font-style: italic;
+    text-decoration: underline;
+}
+
+#content-container {
+    width: 500px;
+    box-shadow: 1px 1px 5px 3px #dedede;
+    border: 1px solid #888;
+}
+
+#layer-2 {
+    width: 480px;
+    height: 5px;
+    border: 1px solid #888;
+    border-radius: 0px 0px 2px 2px;
+    background-color: #eee;
+    border-top: none;
+}
+
+#layer-3 {
+    width: 450px;
+    height: 5px;
+    border: 1px solid #888;
+    border-top: none;
+    border-radius: 0px 0px 2px 2px;
+    background-color: #eee;
+}
+
+#todo-adder {
+    display: flex;
+    width: inherit;
+    padding: 10px;
+}
+
+.fas {
+    display: flex;
+    flex-grow: 0.05;
+    font-size: 1.5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+#search {
+    padding: 10px;
+    flex-grow: 1;
+    border: none;
+    background-color: transparent;
+}
+
+#search::placeholder {
+    font-style: italic;
+    color: #888;
+}
+
+#search:focus {
+    outline-color: #f5f5f5;
+}
+
+#footer {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+#footer > p.param {
+    color: #888;
+    font-size: 1rem; 
+}
+
+.task-wrap {
+    display: flex;
+    padding: 13px;
+}
+
+i[aria-label='ActiveOrNot'] {
+    flex-grow: 0.02;
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+.fa-check-circle-o {
+    color: green;
+}
+
+.task {
+    flex-grow: 1;
+    padding: 0px 10px 0px 10px;
+}
+
+.task-completed {
+    text-decoration: line-through;
+    color: #888;
+}
+
+#state-container {
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn {
+    border: 1px solid #888;
+    border-radius: 5px;
+    background-color: transparent;
+    padding: 5px;
+    color: #888;
+    flex-grow: 1;
+    margin: 5px;
+}
+
+
+.clear-completed:hover {
+    text-decoration: underline;
+}
+
+.count, .clear-completed {
+    color: #888;
+    margin: 10px;
+    flex-grow: 0.02;
+}

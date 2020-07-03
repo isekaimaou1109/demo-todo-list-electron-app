@@ -1,0 +1,16 @@
+{
+  "devDependencies": {
+    "electron": "^9.0.5"
+  },
+  "scripts": {
+    "start": "electron .",
+    "checkMongoActive": "tasklist /FI \"IMAGENAME eq mongod.exe\""
+  },
+  "name": "to-do",
+  "private": true,
+  "version": "1.0.0",
+  "main": "index.js",
+  "description": "demo-2",
+  "license": "MIT",
+  "dependencies": {}
+}

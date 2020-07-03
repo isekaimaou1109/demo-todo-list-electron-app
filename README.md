@@ -1,0 +1,1 @@
+- This is a demo to-do-list app without other libs except electron framework

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Hello World!</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="container">
+            <!-- THIS IS HEADER -->
+            <div class="header">
+                <p aria-label="title">todos</p>
+            </div>
+
+            <!-- THIS IS BODY -->
+            <div id="content-container">
+                <div id="todo-adder">
+                    <i class="fa fas fa-arrow-circle-down" aria-hidden="false" aria-current="false"></i>
+                    <input id="search" value='' type="text" placeholder="What needs to be done?" />
+                </div>
+            </div>
+
+            <!-- THIS IS FOOTER -->
+            <div id='footer'>
+                <p class="param">Double-click to edit a todo</p>
+                <p class="param">Created by yoki-sama</p>
+                <p class="param">Part of TodoMVC</p>
+            </div>
+        </div>
+
+        <script async src="./js/event-global.js"></script>
+    </body>
+</html>
